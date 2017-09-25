@@ -1,5 +1,5 @@
 openapi: 3.0.0
-servers: [
+servers:
   {
     {
       "url": "https://barconnect-ci.dev.cld.touchtunes.com",
@@ -22,7 +22,6 @@ servers: [
       "description": "Production (LIVE) environment"
     }
   }
-]
 info:
   description: >-
     These endpoints allow you to read and write details about MyTT user's
