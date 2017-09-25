@@ -1,31 +1,18 @@
 openapi: 3.0.0
 servers:
-  {
-    {
-      "url": "https://barconnect-ci.dev.cld.touchtunes.com",
-      "description": "Continuous integration DEV environment"
-    },
-    {
-      "url": "https://barconnect-us.dev.cld.touchtunes.com",
-      "description": "STABLE DEV environment"
-    },
-    {
-      "url": "barconnect-us.test.cld.touchtunes.com",
-      "description": "Staging environment"
-    },
-    {
-      "url": "https://prod-beta.barconnect.touchtunes.com",
-      "description": "Production BETA environment"
-    },
-    {
-      "url": "https://barconnect.touchtunes.com",
-      "description": "Production (LIVE) environment"
-    }
-  }
+  - url: http:s//barconnect-ci.dev.cld.touchtunes.com/api
+    description: Continuous integration DEV environment
+  - url: https://barconnect-us.dev.cld.touchtunes.com/api
+    description: STABLE DEV environment
+  - url: https://barconnect-us.test.cld.touchtunes.com/api
+    description: Staging environment
+#  - url: https://barconnect-prod-beta.touchtunes.com/api
+#    description: Production BETA environment
+#  - url: https://barconnect.touchtunes.com/api
+#    description: Production (LIVE) environment
 info:
-  description: >-
-    These endpoints allow you to read and write details about MyTT user's
-    membership details for the Bar Rewards program
+  description:
+    These endpoints allow you to read and write details about MyTT user's membership details for the Bar Rewards program.
   version: 1.0.0
   title: Bar Rewards Members Operations
 paths:
